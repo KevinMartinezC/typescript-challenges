@@ -1,1 +1,2 @@
-export type MyReturnType<T> = any
+export type MyReturnType<T> = T extends (...args: any[]) => infer R ? R : never;
+
